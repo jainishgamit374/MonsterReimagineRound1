@@ -121,7 +121,7 @@ const Events = () => {
           nextEl: '.swiper-button-next',
           prevEl: '.swiper-button-prev',
         }}
-        className="h-[70vh] w-full flex gap-10 pb-10 px-10"
+        className="h-[70vh] w-[350vw]  md:w-full flex flex-wrap gap-10 pb-10 px-12"
       >
         {
           events.map((item, index) => (
@@ -131,7 +131,7 @@ const Events = () => {
           ))
         }
       </Swiper>
-      <div className="buttons absolute top-[55%] z-50 h-[10vh] w-full flex justify-between items-center px-10">
+      <div className="buttons absolute top-[55%] z-50 h-[10vh] w-full flex justify-between items-center px-2">
         <div className='left cursor-pointer swiper-button-prev'>
           <FaAngleLeft className='text-6xl drop-shadow-2xl font-light p-5 text-white bg-zinc-900 rounded-full' />
         </div>

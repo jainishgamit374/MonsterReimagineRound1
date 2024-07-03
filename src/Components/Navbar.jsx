@@ -140,27 +140,29 @@ const Navbar = () => {
           </h1>
         </div>
       </div>
-      <div className="h-[8vh] w-full flex items-center justify-between px-20">
-        <div className="flex w-[20%] items-center gap-10">
-          <div onClick={handleNavClick} className="h-8 w-10 navMenu cursor-pointer z-50 block relative">
-            <span ref={navFirstRef} className="h-[2.3px] monument w-10 bg-black rounded-full inline-block absolute bottom-2 right-0"></span>
-            <span ref={navSecondRef} className="h-[2.3px] monument w-10 bg-black rounded-full inline-block absolute top-2 left-0"></span>
-          </div>
+      <div className="h-[10vh] w-full flex items-center justify-between px-10 md:px-20 bg-blue-50">
+        <div className="flex w-[40%] md:w-[20%] items-center gap-10">
           <img
             className="h-5 object-contain"
             src="https://www.redbull.com/v3/resources/images/client/header/redbullcom-logo_double-with-text.svg"
             alt=""
           />
         </div>
-        <div className="flex w-[60%] justify-center items-center gap-6 text-sm font-medium">
-        <h1 className="links uppercase cursor-pointer">Energy Drinks</h1>
+        <div className="hidden md:flex w-[60%] justify-center items-center gap-6 text-sm font-medium">
+          <h1 className="links uppercase cursor-pointer">Energy Drinks</h1>
           <h1 className="links uppercase cursor-pointer">Events</h1>
           <h1 className="links uppercase cursor-pointer">Athletes</h1>
           <h1 className="links uppercase cursor-pointer">TV</h1>
         </div>
-        <div className="flex w-[20%] justify-end gap-4 text-xl">
-          <CiUser className="bg-zinc-300 p-2 text-4xl rounded-full text-black cursor-pointer" />
-          <CiSearch className="bg-zinc-300 p-2 text-4xl rounded-full text-black cursor-pointer" />
+        <div className="hideen md:flex w-[20%] justify-end gap-8 text-xl">
+          <div className="icons hidden md:flex gap-4">
+            <CiUser className="bg-zinc-300 p-2 text-4xl rounded-full text-black cursor-pointer" />
+            <CiSearch className="bg-zinc-300 p-2 text-4xl rounded-full text-black cursor-pointer" />
+          </div>
+          <div onClick={handleNavClick} className="navMenu h-8 w-10 flex items-center justify-center  cursor-pointer relative z-50">
+            <h1 ref={navFirstRef} className="h-[2.1px] w-10 monument bg-black rounded-full inline-block absolute bottom-2 right-0"></h1>
+            <h1 ref={navSecondRef} className="h-[2.1px] w-10 monument bg-black rounded-full inline-block absolute top-2 left-0"></h1>
+          </div>
         </div>
       </div>
     </>

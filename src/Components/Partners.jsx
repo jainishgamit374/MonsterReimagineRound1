@@ -68,7 +68,7 @@ const Partners = () => {
 
   return (
     <>
-      <div className='relative py-28 mt-30 overflow-hidden bg-[#222]'>
+      <div className='relative py-4 md:py-28 mt-30 overflow-hidden bg-[#222]'>
         {brands.map((item, i) => <Partner direction={i % 2 === 0 ? "left" : "right"} key={i} url={item} />)}
         <div className='absolute top-1/2 -translate-y-1/2 left-0 h-2/3 w-full bg-gradient-to-r from-[#222] via-transparent to-[#222]'></div>
       </div>
