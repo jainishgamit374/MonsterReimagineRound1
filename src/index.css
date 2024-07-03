@@ -1,0 +1,124 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+::-webkit-scrollbar{
+  display: none;
+}
+
+@font-face {
+  font-family: Gilroy;
+  font-weight: 950;
+  src: url(./assets/font/Gilroy-Black.ttf);
+}
+@font-face {
+  font-family: Gilroy;
+  font-weight: 900;
+  src: url(./assets/font/Gilroy-Bold.ttf);
+}
+@font-face {
+  font-family: Gilroy;
+  font-weight: 600;
+  src: url(./assets/font/Gilroy-SemiBold.ttf);
+}
+@font-face {
+  font-family: Gilroy;
+  font-weight: 400;
+  src: url(./assets/font/Gilroy-Medium.ttf);
+}
+@font-face {
+  font-family: Gilroy;
+  font-weight: 200;
+  src: url(./assets/font/Gilroy-Thin.ttf);
+}
+@font-face {
+  font-family: Gilroy;
+  font-weight: 100;
+  src: url(./assets/font/Gilroy-UltraLight.ttf);
+}
+@font-face {
+  font-family: Kajiro;
+  font-weight: 100;
+  src: url(./assets/font/Kajiro.ttf);
+}
+
+*{
+  font-family: Gilroy;
+}
+
+.kajiro{
+  font-family: Kajiro !important;
+}
+
+@keyframes anime {
+  from{
+    transform: translateX(0);
+  }
+  to{
+    transform: translateX(-300%);
+  }
+}
+.marque div{
+  animation-name: anime;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-duration: 25s;
+}
+@font-face {
+  font-family: Monument;
+  src: url('./assets/font/MonumentExtended-Regular.otf');
+}
+.monument{
+  font-family: Monument !important;
+}
+
+.secondtext {
+  position: absolute;
+  color: transparent;
+  -webkit-text-stroke: 2px #ffffff;
+}
+
+.links{
+  position: relative;
+}
+
+.links::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 0%;
+  height: 1px;
+  background-color: #202020;
+  transition: all ease-in-out 0.5s;
+}
+
+.links:hover:before {
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+  right: 0;
+  background-color: #202020;
+}
+
+.link{
+  position: relative;
+}
+
+.link::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 0%;
+  height: 1px;
+  background-color: #dcdcdc;
+  right: 0;
+  transition: all ease-in-out 0.5s;
+}
+
+.link:hover:before {
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+  left: 0;
+  background-color: #cbcbcb;
+}
