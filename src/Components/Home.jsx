@@ -110,13 +110,13 @@ const Home = () => {
         </h1>
         <div className="hero-images w-full h-full absolute z-[8]">
           <div className="side-img1" ref={scrollRef}>
-            <img className="w-[26vw] md:w-[12vw] z-[8] absolute left-[33.5%] md:left-[40.5%] top-[30%] md:top-32 -rotate-[18deg] -translate-x-1/2" src="https://www.redbull.com/energydrink/v1/resources/contentful/images/lcr8qbvxj7mh/2eA9T4loMyY8xusITbIbM5/23c70a0e9f7528efef52cd8e4180c703/DRES_US_SEABLUE-Juneberry-250ml_ambient_front_redbullcom.png?h=453&fm=webp&q=90" alt="" />
+            <img className="w-[35vw] md:w-[12vw] z-[8] absolute left-[33.5%] md:left-[40.5%] top-[30%] md:top-32 -rotate-[18deg] -translate-x-1/2" src="https://www.redbull.com/energydrink/v1/resources/contentful/images/lcr8qbvxj7mh/2eA9T4loMyY8xusITbIbM5/23c70a0e9f7528efef52cd8e4180c703/DRES_US_SEABLUE-Juneberry-250ml_ambient_front_redbullcom.png?h=453&fm=webp&q=90" alt="" />
           </div>
           <div className="img-1-hero">
-            <img className="w-[85vw] md:w-[40vw] z-[9] absolute left-1/2 top-[25%]  md:top-16 -translate-x-1/2" src="https://pngimg.com/uploads/red_bull/red_bull_PNG27.png" alt="" />
+            <img className="w-[100vw] md:w-[40vw] z-[9] absolute left-1/2 top-[25%]  md:top-16 -translate-x-1/2" src="https://pngimg.com/uploads/red_bull/red_bull_PNG27.png" alt="" />
           </div>
           <div className="side-img2" ref={scrollRef}>
-            <img className="w-[26vw] md:w-[12vw] z-[8] absolute left-[67.5%] md:left-[59%] top-[30%] md:top-32 rotate-[18deg] -translate-x-1/2" src="https://www.redbull.com/energydrink/v1/resources/contentful/images/lcr8qbvxj7mh/K1jlYK6k5ctAmxuxD6B26/1a6be2ef25790e920a4c0ca6fa1693d6/DRES_US_SUMMER-AMBER-SF-250ml_ambient_front_redbullcom.png?h=906&fm=webp&q=90" alt="" />
+            <img className="w-[35vw] md:w-[12vw] z-[8] absolute left-[67.5%] md:left-[59%] top-[30%] md:top-32 rotate-[18deg] -translate-x-1/2" src="https://www.redbull.com/energydrink/v1/resources/contentful/images/lcr8qbvxj7mh/K1jlYK6k5ctAmxuxD6B26/1a6be2ef25790e920a4c0ca6fa1693d6/DRES_US_SUMMER-AMBER-SF-250ml_ambient_front_redbullcom.png?h=906&fm=webp&q=90" alt="" />
           </div>
         </div>
       </div>
