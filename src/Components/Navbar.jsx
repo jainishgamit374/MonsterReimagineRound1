@@ -76,13 +76,13 @@ const Navbar = () => {
     } else {
       setNav("vertical");
       tl.to(secondRef.current, {
-        top: "-100%",
+        top: "-110%",
         ease: "expo.inOut",
         duration: 1,
       });
       tl.to(firstRef.current, {
         delay: -0.8,
-        top: "-100%",
+        top: "-110%",
         ease: "expo.inOut",
         duration: 1,
       });
@@ -115,8 +115,8 @@ const Navbar = () => {
 
   return (
     <>
-      <div ref={firstRef} className="h-screen w-full fixed bg-red-400 z-40 -top-[100%]"></div>
-      <div ref={secondRef} className="h-screen w-full fixed bg-black z-40 -top-[100%]" >
+      <div ref={firstRef} className="h-screen w-full fixed bg-red-400 z-40 -top-[110%]"></div>
+      <div ref={secondRef} className="h-screen w-full fixed bg-black z-40 -top-[110%]" >
         <div className="h-full w-full flex items-center flex-col gap-6 justify-center text-white">
           <h1 className="animation text-5xl flex flex-col h-10 overflow-hidden relative">
             <span className="monument inline-block">Home</span>
