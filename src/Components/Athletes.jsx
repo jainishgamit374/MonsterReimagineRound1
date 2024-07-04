@@ -40,7 +40,7 @@ const Athletes = () => {
 
     return (
         <div className="w-full">
-            <h1 className='monument text-center pt-20 text-6xl md:text-7xl '>Athletes</h1>
+            <h1 className='monument text-center pt-20 text-5xl md:text-7xl '>Athletes</h1>
             <p className='text-center text-sm pb-20 monument'>A Supportive Team</p>
             <div className="relative pb-20">
                 {products.map((item, i) => (

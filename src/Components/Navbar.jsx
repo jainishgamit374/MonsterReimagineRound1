@@ -140,7 +140,7 @@ const Navbar = () => {
           </h1>
         </div>
       </div>
-      <div className="nav-bar h-[10vh] w-full flex items-center justify-between px-10 md:px-20 bg-transparent fixed z-30">
+      <div className="lg:h-[10vh] h-[8vh] w-full flex items-center justify-between px-10 md:px-20 bg-white fixed z-30">
         <div className="flex w-[40%] md:w-[20%] items-center gap-10">
           <img
             className="h-5 object-contain"
@@ -161,7 +161,7 @@ const Navbar = () => {
           </div>
         </div>
       </div>
-      <div onClick={handleNavClick} className="navMenu h-8 w-10 flex items-center justify-center  cursor-pointer fixed z-50 left-[85%] md:left-[90%] top-4">
+      <div onClick={handleNavClick} className="navMenu h-8 w-10 flex items-center justify-center  cursor-pointer fixed z-50 left-[85%] md:left-[90%] lg:top-5 top-4">
         <h1 ref={navFirstRef} className="h-[2px] w-10 monument bg-black rounded-full inline-block absolute bottom-2 right-0"></h1>
         <h1 ref={navSecondRef} className="h-[2px] w-10 monument bg-black rounded-full inline-block absolute top-2 left-0"></h1>
       </div>

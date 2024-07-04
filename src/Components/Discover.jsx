@@ -8,7 +8,6 @@ gsap.registerPlugin(ScrollTrigger);
 
 const Discover = () => {
     const scrollRef = useRef(null);
-
     useGSAP(() => {
       const img = scrollRef.current.querySelector('.can-img');
   
@@ -55,16 +54,14 @@ const Discover = () => {
   
       createScrollTrigger();
       window.addEventListener('resize', createScrollTrigger);
-  
       return () => {
         window.removeEventListener('resize', createScrollTrigger);
         ScrollTrigger.getAll().forEach(trigger => trigger.kill());
       };
     }, []);
-
     return (
         <div className="w-full relative">
-        <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl tracking-tighter text-center pt-20 monument">
+        <h1 className="text-5xl sm:text-5xl md:text-6xl lg:text-7xl tracking-tighter text-center pt-20 monument">
           Discover
         </h1>
         <p className="text-center text-xs sm:text-sm md:text-base monument pb-10">
@@ -74,6 +71,7 @@ const Discover = () => {
           <div className="img-container w-full h-full grid grid-cols-2 md:grid-cols-3 gap-4 p-4 justify-center items-center">
             <div className="drop-shadow-2xl flex items-center justify-center rounded-xl  md:rounded-3xl border-1 md:border-2 bg-[#060B27] text-white">
               <h1 className="text-[2vw] sm:text-sm py-4 md:py-8">⭐ Dive In To all Flavours</h1>
+
             </div>
             <div className="flex items-center justify-center  row-span-2 md:row-span-3 rounded-3xl md:rounded-3xl border-2 text-white z-20" ref={scrollRef}>
               <img className="can-img h-[50vw] md:h-[30vw] object-contain" src="https://m.media-amazon.com/images/I/51JFRoM+7HL._AC_UF1000,1000_QL80_.jpg" alt="" />
