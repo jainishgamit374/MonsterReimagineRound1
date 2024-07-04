@@ -1,4 +1,22 @@
 const Ingredients = () => {
+  var array = [
+    {
+      name: "Carbonated Water",
+      desc: "Acts as the base of the beverage, providing a refreshing fizz",
+    },
+    {
+      name: "Taurine",
+      desc: "An amino acid that supports neurological development and regulates water and mineral levels in the blood."
+    },
+    {
+      name: "Caffeine",
+      desc: "A stimulant that increases alertness and reduces fatigue."
+    },
+    {
+      name: "Sucralose",
+      desc: "Artificial sweeteners used to provide sweetness without additional calories."
+    }
+  ];
   return (
     <>
       <h1 className="text-xl md:text-4xl font-semibold capitalize text-center pt-20 monument">Buy more than will get</h1>
