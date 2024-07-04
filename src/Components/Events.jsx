@@ -107,7 +107,7 @@ const Events = () => {
   ];
   return (
     <div className="min-h-screen w-full relative">
-      <h1 className="monument text-7xl pt-20 text-center">Events</h1>
+      <h1 className="monument text-5xl lg:text-7xl pt-20 text-center">Events</h1>
       <p className="monument text-xs pb-20 text-center">
         Discover worldwide Red Bull events.
       </p>

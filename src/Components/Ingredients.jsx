@@ -1,10 +1,9 @@
 const Ingredients = () => {
   return (
     <>
-      <h1 className="text-3xl md:text-4xl font-semibold capitalize text-center pt-20 monument">Buy more than will get</h1>
-      <h1 className="text-3xl md:text-3xl font-semibold capitalize text-center pb-20 monument">Extra Nourishment</h1>
+      <h1 className="text-xl md:text-4xl font-semibold capitalize text-center pt-20 monument">Buy more than will get</h1>
+      <h1 className="text-lg md:text-3xl font-semibold capitalize text-center pb-20 monument">Extra Nourishment</h1>
       <div className="h-screen md:h-[70vh] w-full relative flex flex-col  md:flex-row gap-0 md:gap-[30vw] justify-end md:justify-center mt-10">
-        
         <div className="flex flex-col items-center md:h-1/2 w-full justify-center md:justify-end  md:block md:px-20">
           <div className="h-40 md:h-72 w-80">
             <div>
