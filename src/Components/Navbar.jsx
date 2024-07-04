@@ -115,8 +115,8 @@ const Navbar = () => {
 
   return (
     <>
-      <div ref={firstRef} className="h-screen w-full fixed bg-red-400 z-50 -top-[100%]"></div>
-      <div ref={secondRef} className="h-screen w-full fixed bg-black z-50 -top-[100%]" >
+      <div ref={firstRef} className="h-screen w-full fixed bg-red-400 z-40 -top-[100%]"></div>
+      <div ref={secondRef} className="h-screen w-full fixed bg-black z-40 -top-[100%]" >
         <div className="h-full w-full flex items-center flex-col gap-6 justify-center text-white">
           <h1 className="animation text-5xl flex flex-col h-10 overflow-hidden relative">
             <span className="monument inline-block">Home</span>
@@ -140,7 +140,7 @@ const Navbar = () => {
           </h1>
         </div>
       </div>
-      <div className="h-[10vh] w-full flex items-center justify-between px-10 md:px-20 bg-blue-50">
+      <div className="h-[10vh] w-full flex items-center justify-between px-10 md:px-20 bg-white fixed z-30">
         <div className="flex w-[40%] md:w-[20%] items-center gap-10">
           <img
             className="h-5 object-contain"
@@ -154,16 +154,16 @@ const Navbar = () => {
           <h1 className="links uppercase cursor-pointer">Athletes</h1>
           <h1 className="links uppercase cursor-pointer">TV</h1>
         </div>
-        <div className="hideen md:flex w-[20%] justify-end gap-8 text-xl">
+        <div className="hideen md:flex w-[20%] justify-end gap-8 text-xl pr-24">
           <div className="icons hidden md:flex gap-4">
             <CiUser className="bg-zinc-300 p-2 text-4xl rounded-full text-black cursor-pointer" />
             <CiSearch className="bg-zinc-300 p-2 text-4xl rounded-full text-black cursor-pointer" />
           </div>
-          <div onClick={handleNavClick} className="navMenu h-8 w-10 flex items-center justify-center  cursor-pointer relative z-50">
-            <h1 ref={navFirstRef} className="h-[2.1px] w-10 monument bg-black rounded-full inline-block absolute bottom-2 right-0"></h1>
-            <h1 ref={navSecondRef} className="h-[2.1px] w-10 monument bg-black rounded-full inline-block absolute top-2 left-0"></h1>
-          </div>
         </div>
+      </div>
+      <div onClick={handleNavClick} className="navMenu h-8 w-10 flex items-center justify-center  cursor-pointer fixed z-50 left-[85%] md:left-[90%] top-4">
+        <h1 ref={navFirstRef} className="h-[2px] w-10 monument bg-black rounded-full inline-block absolute bottom-2 right-0"></h1>
+        <h1 ref={navSecondRef} className="h-[2px] w-10 monument bg-black rounded-full inline-block absolute top-2 left-0"></h1>
       </div>
     </>
   );

@@ -122,3 +122,15 @@
   left: 0;
   background-color: #cbcbcb;
 }
+
+.cursor-blur {
+  height: 500px;
+  width: 500px;
+  background-color: rgba(99, 134, 247, 0.248);
+  border-radius: 50%;
+  position: fixed;
+  filter: blur(80px);
+  z-index: 9999;
+  transition: all linear 0.4s;
+  pointer-events: none;;
+}
