@@ -5,13 +5,7 @@ import { ScrollTrigger } from "gsap/all";
 gsap.registerPlugin(ScrollTrigger);
 
 const Home = () => {
-<<<<<<< HEAD
-=======
-
   const scrollRef = useRef(null);
-
-
->>>>>>> 7f2ab240b7e3a08196ea81fd7234f9df7a175d02
   useGSAP(() => {
     var t1 = gsap.timeline();
     t1.from(".animeHeading span", {
@@ -84,26 +78,36 @@ const Home = () => {
   return (
     <>
       <div className="w-full h-screen overflow-hidden relative">
-        <h1 data-content="REDBULL" className="animeHeading flex font-[Kajiro] tracking-[5vw] text-[34vw] md:text-[20vw] absolute  top-1/2 md:top-[58%] left-[52%] -translate-x-2/4 -translate-y-2/4 z-[4]">
-          <span className="inline-block font-[Kajiro] kajiro">R</span>
+        <h1 data-content="REDBULL" className="animeHeading flex font-[Kajiro] leading-none tracking-[5vw] text-[70vw] md:text-[20vw] absolute  top-1/2 md:top-[58%] left-[52%] -translate-x-2/4 -translate-y-2/4 z-[4]">
+        <div className="lg:flex">
+        <div className="flex">
+        <span className="inline-block font-[Kajiro] kajiro">R</span>
           <span className="inline-block font-[Kajiro] kajiro">E</span>
           <span className="inline-block font-[Kajiro] kajiro">D</span>
-          <span className="inline-block font-[Kajiro] kajiro">B</span>
+        </div>
+        <div className="flex">
+        <span className="inline-block font-[Kajiro] kajiro">B</span>
           <span className="inline-block font-[Kajiro] kajiro">U</span>
           <span className="inline-block font-[Kajiro] kajiro">L</span>
           <span className="inline-block font-[Kajiro] kajiro">L</span>
+        </div>
+        </div>
         </h1>
-        <h1 data-content="REDBULL" className="secondtext flex font-[Kajiro] tracking-[5vw] text-transparent text-[34vw] md:text-[20vw] absolute z-[9]  top-1/2 md:top-[58%] left-[52%] -translate-x-2/4 -translate-y-2/4 ">
-          <span className="inline-block font-[Kajiro] kajiro">R</span>
+        <h1 data-content="REDBULL" className="secondtext flex font-[Kajiro] leading-none tracking-[5vw] text-transparent text-[70vw] md:text-[20vw] absolute z-[9]  top-1/2 md:top-[58%] left-[52%] -translate-x-2/4 -translate-y-2/4 ">
+        <div className="lg:flex">
+        <div className="flex">
+        <span className="inline-block font-[Kajiro] kajiro">R</span>
           <span className="inline-block font-[Kajiro] kajiro">E</span>
           <span className="inline-block font-[Kajiro] kajiro">D</span>
-          <span className="inline-block font-[Kajiro] kajiro">B</span>
+        </div>
+        <div className="flex">
+        <span className="inline-block font-[Kajiro] kajiro">B</span>
           <span className="inline-block font-[Kajiro] kajiro">U</span>
           <span className="inline-block font-[Kajiro] kajiro">L</span>
           <span className="inline-block font-[Kajiro] kajiro">L</span>
+        </div>
+        </div>
         </h1>
-
-
         <div className="hero-images w-full h-full absolute z-[8]">
           <div className="side-img1" ref={scrollRef}>
             <img className="w-[26vw] md:w-[12vw] z-[8] absolute left-[33.5%] md:left-[40.5%] top-[30%] md:top-32 -rotate-[18deg] -translate-x-1/2" src="https://www.redbull.com/energydrink/v1/resources/contentful/images/lcr8qbvxj7mh/2eA9T4loMyY8xusITbIbM5/23c70a0e9f7528efef52cd8e4180c703/DRES_US_SEABLUE-Juneberry-250ml_ambient_front_redbullcom.png?h=453&fm=webp&q=90" alt="" />

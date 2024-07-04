@@ -8,11 +8,8 @@ import Discover from "./Components/Discover";
 import Partners from "./Components/Partners";
 import Ingredients from "./Components/Ingredients";
 import Events from "./Components/Events";
-<<<<<<< HEAD
 import Loader from "./Components/Loader";
-=======
 import Lenis from "lenis";
->>>>>>> 7f2ab240b7e3a08196ea81fd7234f9df7a175d02
 
 const App = () => {
   function lenisFn() {
@@ -30,7 +27,6 @@ const App = () => {
   lenisFn();
   return (
     <div className="h-full w-full overflow-hidden">
-      <Loader/>
       <Navbar/>
       <Home/>
       <Marque/>
