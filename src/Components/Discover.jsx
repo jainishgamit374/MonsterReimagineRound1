@@ -17,7 +17,8 @@ const Discover = () => {
         ScrollTrigger.getAll().forEach(trigger => trigger.kill());
   
         gsap.to(img, {
-          y: mq.matches ? "100" : "-150",
+          y: mq.matches ? "-400" : "-50",
+          x: mq.matches ? "-100" : "10",
           rotation: "10deg",
           scrollTrigger: {
             trigger: img,
@@ -67,21 +68,22 @@ const Discover = () => {
           The world of Red Bull
         </p>
         <div className="max-w-screen-xl m-auto min-h-screen relative py-8">
-          <div className="img-container w-full h-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 p-4 justify-center items-center">
-            <div className="drop-shadow-2xl row-span-1 flex items-center justify-center rounded-3xl border-2 bg-[#060B27] text-white">
-              <h1 className="text-xs sm:text-sm py-8">⭐ Dive In To all Flavours</h1>
+          <div className="img-container w-full h-full grid grid-cols-2 md:grid-cols-3 gap-4 p-4 justify-center items-center">
+            <div className="drop-shadow-2xl flex items-center justify-center rounded-xl  md:rounded-3xl border-1 md:border-2 bg-[#060B27] text-white">
+              <h1 className="text-[2vw] sm:text-sm py-4 md:py-8">⭐ Dive In To all Flavours</h1>
+
             </div>
-            <div className="flex items-center justify-center row-span-1 md:row-span-3 rounded-3xl border-2 text-white z-20" ref={scrollRef}>
+            <div className="flex items-center justify-center  row-span-2 md:row-span-3 rounded-3xl md:rounded-3xl border-2 text-white z-20" ref={scrollRef}>
               <img className="can-img h-[50vw] md:h-[30vw] object-contain" src="https://m.media-amazon.com/images/I/51JFRoM+7HL._AC_UF1000,1000_QL80_.jpg" alt="" />
             </div>
-            <div className="drop-shadow-2xl flex items-center justify-center row-span-1 md:row-span-2 rounded-3xl overflow-hidden z-10">
+            <div className="drop-shadow-2xl flex items-center justify-center row-span-1 md:row-span-2 rounded-lg md:rounded-3xl overflow-hidden z-10">
               <img className="right-img rounded-3xl w-full h-full object-top object-cover" src="https://i.pinimg.com/564x/53/d0/36/53d036121daaf0aba535bc22b082dfee.jpg" alt="" />
             </div>
-            <div className="drop-shadow-2xl flex items-center justify-center row-span-1 md:row-span-2 rounded-3xl overflow-hidden z-10">
+            <div className="drop-shadow-2xl flex items-center justify-center  md:row-span-2 rounded-lg md:rounded-3xl overflow-hidden z-10">
               <img className="left-img rounded-3xl w-full h-full object-cover" src="https://img.redbull.com/images/c_fill,f_auto,q_auto,w_770,h_578,g_auto,g_auto/redbullcom/2020/5/22/mey8s5v0xtjdm3v9vmul/the-red-bulletin-logo" alt="" />
             </div>
-            <div className="drop-shadow-2xl flex items-center justify-center rounded-3xl border-2 bg-[#060B27] text-zinc-300 py-8">
-              <a className="flex items-center gap-4 cursor-pointer">Over New Products <MdArrowOutward /></a>
+            <div className="drop-shadow-2xl flex items-center justify-center rounded-xl md:rounded-3xl border-1 md:border-2 bg-[#060B27] text-zinc-300 py-4 md:py-8">
+              <a className="text-[2vw] sm:text-sm  md:py-8 flex items-center gap-2  md:gap-4 cursor-pointer">Over New Products <MdArrowOutward /></a>
             </div>
           </div>
         </div>
