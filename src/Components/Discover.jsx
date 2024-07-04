@@ -17,7 +17,7 @@ const Discover = () => {
         ScrollTrigger.getAll().forEach(trigger => trigger.kill());
   
         gsap.to(img, {
-          y: mq.matches ? "280" : "-150",
+          y: mq.matches ? "100" : "-150",
           rotation: "10deg",
           scrollTrigger: {
             trigger: img,
@@ -32,8 +32,8 @@ const Discover = () => {
         const t1 = gsap.timeline({
           scrollTrigger: {
             trigger: scrollRef.current,
-            start: "top 80%",
-            end: "bottom 60%",
+            start: "top 70%",
+            end: "bottom 50%",
             scrub: true,
           },
         });

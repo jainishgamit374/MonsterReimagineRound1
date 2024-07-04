@@ -2,17 +2,32 @@ import React from "react";
 import Home from "./Components/Home";
 import Navbar from "./Components/Navbar";
 import Marque from "./Components/Marque";
-import LocomotiveScroll from "locomotive-scroll";
 import Footer from "./Components/Footer";
 import Athletes from "./Components/Athletes";
 import Discover from "./Components/Discover";
 import Partners from "./Components/Partners";
 import Ingredients from "./Components/Ingredients";
 import Events from "./Components/Events";
+<<<<<<< HEAD
 import Loader from "./Components/Loader";
+=======
+import Lenis from "lenis";
+>>>>>>> 7f2ab240b7e3a08196ea81fd7234f9df7a175d02
 
 const App = () => {
-  const locomotiveScroll = new LocomotiveScroll();
+  function lenisFn() {
+    const lenis = new Lenis({
+      wheelMultiplier: 2,
+      duration: 1.5,
+      easing: (x) => 1 - Math.pow(1 - x, 5),
+    });
+    function raf(time) {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    }
+    requestAnimationFrame(raf);
+  }
+  lenisFn();
   return (
     <div className="h-full w-full overflow-hidden">
       <Loader/>
