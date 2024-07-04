@@ -3,9 +3,7 @@ import gsap from "gsap";
 
 const Home = () => {
   useGSAP(() => {
-
     var t1 = gsap.timeline();
-
     t1.from(".animeHeading span", {
       y: 200,
       stagger: 0.1,

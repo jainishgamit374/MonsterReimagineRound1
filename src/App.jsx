@@ -9,11 +9,13 @@ import Discover from "./Components/Discover";
 import Partners from "./Components/Partners";
 import Ingredients from "./Components/Ingredients";
 import Events from "./Components/Events";
+import Loader from "./Components/Loader";
 
 const App = () => {
   const locomotiveScroll = new LocomotiveScroll();
   return (
     <div className="h-full w-full overflow-hidden">
+      <Loader/>
       <Navbar/>
       <Home/>
       <Marque/>

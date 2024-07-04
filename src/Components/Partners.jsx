@@ -1,4 +1,3 @@
-import React from 'react'
 import Partner from './Partner'
 
 const Partners = () => {

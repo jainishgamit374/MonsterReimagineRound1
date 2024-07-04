@@ -159,7 +159,7 @@ const Navbar = () => {
             <CiUser className="bg-zinc-300 p-2 text-4xl rounded-full text-black cursor-pointer" />
             <CiSearch className="bg-zinc-300 p-2 text-4xl rounded-full text-black cursor-pointer" />
           </div>
-          <div onClick={handleNavClick} className="navMenu h-8 w-10 flex items-center justify-center  cursor-pointer relative z-50">
+          <div onClick={handleNavClick} className="navMenu h-8 w-10 flex items-center justify-center  cursor-pointer relative z-40">
             <h1 ref={navFirstRef} className="h-[2.1px] w-10 monument bg-black rounded-full inline-block absolute bottom-2 right-0"></h1>
             <h1 ref={navSecondRef} className="h-[2.1px] w-10 monument bg-black rounded-full inline-block absolute top-2 left-0"></h1>
           </div>
