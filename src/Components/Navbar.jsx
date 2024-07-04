@@ -140,7 +140,7 @@ const Navbar = () => {
           </h1>
         </div>
       </div>
-      <div className="h-[10vh] w-full flex items-center justify-between px-10 md:px-20 bg-white fixed z-30">
+      <div className="nav-bar h-[10vh] w-full flex items-center justify-between px-10 md:px-20 bg-transparent fixed z-30">
         <div className="flex w-[40%] md:w-[20%] items-center gap-10">
           <img
             className="h-5 object-contain"
