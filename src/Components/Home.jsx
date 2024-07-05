@@ -5,9 +5,10 @@ import { ScrollTrigger } from "gsap/all";
 gsap.registerPlugin(ScrollTrigger);
 
 const Home = () => {
-  const scrollRef = useRef(null);
   useGSAP(() => {
+
     var t1 = gsap.timeline();
+
     t1.from(".animeHeading span", {
       y: 200,
       stagger: 0.1,
@@ -16,14 +17,13 @@ const Home = () => {
       opacity: 0,
     }, "h");
 
-    t1.from(".secondtext span", {
-      y: 200,
-      stagger: 0.1,
-      duration: 2,
-      ease: "power2.inOut",
-      opacity: 0,
-    }, "h");
-
+            t1.from(".secondtext span", {
+              y: 200,
+              stagger: 0.1,
+              duration: 2,
+              ease: "power2.inOut",
+              opacity: 0,
+            }, "h");
 
     t1.from(".hero-images", {
       y: 200,
@@ -31,56 +31,33 @@ const Home = () => {
       duration: 2,
       ease: "power2.inOut",
       opacity: 0,
-    },"h");
+    });
 
-    t1.from(".hero-images .side-img1 img", {
-      left: "50%",
-      rotate: "0deg",
-      stagger: 0.1,
-      duration: 1,
-      ease: "power2.inOut"
-    }, "p");
+            t1.from(".hero-images .side-img1 img", {
+              left: "50%",
+              rotate: "0deg",
+              stagger: 0.1,
+              duration: 1,
+              ease: "power2.inOut"
+            }, "p");
 
     t1.from(".hero-images .side-img2 img", {
       left: "50%",
       rotate: "0deg",
       stagger: 0.1,
       duration: 1,
-      ease: "power2.inOut",
+      ease: "power2.inOut"
     }, "p");
-    
-    const t2 = gsap.timeline({
-      scrollTrigger: {
-        trigger: scrollRef.current,
-        start: "top 15%",
-        end: "bottom -50%",
-        scrub: true,
-      },
-    });
 
-    t2.to(".hero-images .side-img1 img", {
-      left: "-20%",
-      rotate: "20deg", 
-      duration: 3,
-      ease: "power2.inOut"
-    }, "p1`");
 
-    t2.to(".hero-images .side-img2 img", {
-      left: "120%",
-      rotate: "-20deg",
-      duration: 3,
-      ease: "power2.inOut"
-    }, "p1`");
 
 
   });
   return (
     <>
       <div className="w-full h-screen overflow-hidden relative">
-        <h1 data-content="REDBULL" className="animeHeading flex font-[Kajiro] leading-none tracking-[5vw] text-[70vw] md:text-[20vw] absolute  top-1/2 md:top-[58%] left-[52%] -translate-x-2/4 -translate-y-2/4 z-[4]">
-        <div className="lg:flex">
-        <div className="flex">
-        <span className="inline-block font-[Kajiro] kajiro">R</span>
+        <h1 data-content="REDBULL" className="animeHeading flex font-[Kajiro] tracking-[5vw] text-[20vw] absolute  top-1/2 left-[52%] -translate-x-2/4 -translate-y-2/4">
+          <span className="inline-block font-[Kajiro] kajiro">R</span>
           <span className="inline-block font-[Kajiro] kajiro">E</span>
           <span className="inline-block font-[Kajiro] kajiro">D</span>
         </div>
