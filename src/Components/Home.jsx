@@ -5,78 +5,76 @@ import { ScrollTrigger } from "gsap/all";
 gsap.registerPlugin(ScrollTrigger);
 
 const Home = () => {
+  var t1 = gsap.timeline();
   const scrollRef = useRef(null);
-  useGSAP(() => {
-    var t1 = gsap.timeline();
-    t1.from(".animeHeading span", {
-      y: 200,
-      stagger: 0.1,
-      duration: 2,
-      ease: "power2.inOut",
-      opacity: 0,
-    }, "h");
 
-    t1.from(".secondtext span", {
-      y: 200,
-      stagger: 0.1,
-      duration: 2,
-      ease: "power2.inOut",
-      opacity: 0,
-    }, "h");
+  useEffect(() => {
+    const handleDOMContentLoaded = () => {
+      var videoElement = document.querySelector(".video");
+      var x = videoElement.play();
+      videoElement.addEventListener("ended", () => {
+        gsap.to(".loaderDiv", {
+          top: "-100vh",
+          duration: 1,
+          ease: "expo.inOut",
+          onComplete: () => {
+            t1.from(".animeHeading span", {
+              y: 200,
+              stagger: 0.1,
+              duration: 2,
+              ease: "power2.inOut",
+              opacity: 0,
+            }, "h");
 
+            t1.from(".secondtext span", {
+              y: 200,
+              stagger: 0.1,
+              duration: 2,
+              ease: "power2.inOut",
+              opacity: 0,
+            }, "h");
 
-    t1.from(".hero-images", {
-      y: 200,
-      stagger: 0.1,
-      duration: 2,
-      ease: "power2.inOut",
-      opacity: 0,
-    },"h");
+            t1.from(".hero-images", {
+              y: 200,
+              stagger: 0.1,
+              duration: 2,
+              ease: "power2.inOut",
+              opacity: 0,
+            },"h");
 
-    t1.from(".hero-images .side-img1 img", {
-      left: "50%",
-      rotate: "0deg",
-      stagger: 0.1,
-      duration: 1,
-      ease: "power2.inOut"
-    }, "p");
+            t1.from(".hero-images .side-img1 img", {
+              left: "50%",
+              rotate: "0deg",
+              stagger: 0.1,
+              duration: 1,
+              ease: "power2.inOut"
+            }, "p");
 
-    t1.from(".hero-images .side-img2 img", {
-      left: "50%",
-      rotate: "0deg",
-      stagger: 0.1,
-      duration: 1,
-      ease: "power2.inOut",
-    }, "p");
-    
-    const t2 = gsap.timeline({
-      scrollTrigger: {
-        trigger: scrollRef.current,
-        start: "top 15%",
-        end: "bottom -50%",
-        scrub: true,
-      },
-    });
+            t1.from(".hero-images .side-img2 img", {
+              left: "50%",
+              rotate: "0deg",
+              stagger: 0.1,
+              duration: 1,
+              ease: "power2.inOut",
+            }, "p");
+          }
+        });
+      });
+    };
 
-    t2.to(".hero-images .side-img1 img", {
-      left: "-20%",
-      rotate: "20deg", 
-      duration: 3,
-      ease: "power2.inOut"
-    }, "p1`");
+    if (document.readyState === 'complete' || document.readyState === 'interactive') {
+      handleDOMContentLoaded();
+    } else {
+      document.addEventListener('DOMContentLoaded', handleDOMContentLoaded);
+    }
+  }, []);
 
-    t2.to(".hero-images .side-img2 img", {
-      left: "120%",
-      rotate: "-20deg",
-      duration: 3,
-      ease: "power2.inOut"
-    }, "p1`");
-
-
-  });
   return (
     <>
       <div className="w-full h-screen overflow-hidden relative">
+        <div className="loaderDiv h-screen w-full fixed top-0 object-cover left-0 z-50 bg-red-200">
+          <video className="video h-full object-cover w-full" src="./videoplayback.webm" muted></video>
+        </div>
         <h1 data-content="REDBULL" className="animeHeading flex font-[Kajiro] leading-none tracking-[5vw] text-[70vw] md:text-[20vw] absolute  top-1/2 md:top-[58%] left-[52%] -translate-x-2/4 -translate-y-2/4 z-[4]">
         <div className="lg:flex">
         <div className="flex">
