@@ -27,6 +27,7 @@ const App = () => {
   lenisFn();
   return (
     <div className="h-full w-full overflow-hidden">
+      <Loader/>
       <Navbar/>
       <Home/>
       <Marque/>

@@ -35,18 +35,6 @@ const Discover = () => {
             scrub: true,
           },
         });
-  
-        t1.from(".right-img", {
-          opacity: 0,
-          duration: 1,
-          y: -200,
-        }, 'i');
-  
-        t1.from(".left-img", {
-          opacity: 0,
-          duration: 1,
-          y: -200,
-        }, 'i');
       };
       createScrollTrigger();
       window.addEventListener('resize', createScrollTrigger);
