@@ -83,7 +83,7 @@ const Discover = () => {
         >
           <img
             className="can-img h-56 lg:h-96 object-contain"
-            src="https://m.media-amazon.com/images/I/51JFRoM+7HL._AC_UF1000,1000_QL80_.jpg"
+            src="./p2.png"
             alt="Red Bull Can"
           />
         </div>

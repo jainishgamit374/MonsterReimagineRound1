@@ -8,7 +8,6 @@ import Discover from "./Components/Discover";
 import Partners from "./Components/Partners";
 import Ingredients from "./Components/Ingredients";
 import Events from "./Components/Events";
-import Loader from "./Components/Loader";
 import Lenis from "lenis";
 
 const App = () => {
