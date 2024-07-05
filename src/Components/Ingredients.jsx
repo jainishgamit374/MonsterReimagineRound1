@@ -29,8 +29,8 @@ const Ingredients = () => {
           array.map((item, i) => (
             <div key={i} className="h-40 md:h-72 w-80">
             <div>
-              <h1 className="text-xl font-black flex justify-end">{item.name}</h1>
-              <p className="text-sm flex  md:flex-end py-3 text-end md:text-end">
+              <h1 className="text-xl font-black flex lg:justify-end">{item.name}</h1>
+              <p className="text-sm flex  md:flex-end py-3 lg:text-end md:text-end">
                 {item.desc}
               </p>
             </div>
@@ -44,7 +44,7 @@ const Ingredients = () => {
               <div key={i} className="h-40 md:h-72 w-80">
             <div>
               <h1 className="text-xl font-black flex justify-start">{item.name}</h1>
-              <p className="text-sm flex  md:flex-end py-3 text-end md:text-start">
+              <p className="text-sm flex  md:flex-end py-3 lg:text-end md:text-start">
                 {item.desc}
               </p>
             </div>
