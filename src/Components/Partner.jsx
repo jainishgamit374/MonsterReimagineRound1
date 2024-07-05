@@ -10,7 +10,7 @@ const Partner = ({ url, direction }) => {
                     transition={{ duration: 90, ease: "linear", repeat: Infinity }}
                     className="flex flex-shrink-0 pr-20  items-center gap-20 py-7">
                     {url.map((url, i) => (
-                        <img className='w-[5.8vw]' key={i} src={url} />
+                        <img className='w-[15vw] md:w-[5.8vw]' key={i} src={url} />
                     ))}
                 </motion.div>
                 <motion.div
@@ -19,7 +19,7 @@ const Partner = ({ url, direction }) => {
                     transition={{ duration: 90, ease: "linear", repeat: Infinity }}
                     className="flex flex-shrink-0 pr-20 items-center gap-20 py-7">
                     {url.map((url, i) => (
-                        <img className='w-[5.8vw]' key={i} src={url} />
+                        <img className='w-[15vw] md:w-[5.8vw]' key={i} src={url} />
                     ))}
                 </motion.div>
             </div>

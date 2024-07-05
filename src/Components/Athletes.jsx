@@ -40,24 +40,24 @@ const Athletes = () => {
 
     return (
         <div className="w-full">
-            <h1 className='monument text-center pt-20 text-7xl '>Athletes</h1>
+            <h1 className='monument text-center pt-20 text-5xl md:text-7xl '>Athletes</h1>
             <p className='text-center text-sm pb-20 monument'>A Supportive Team</p>
             <div className="relative pb-20">
                 {products.map((item, i) => (
                     <Athlete mover={mover} data={item} key={i} id={i} />
                 ))}
-                <div className="absolute top-0 left-0 w-full h-full pointer-events-none">
+                <div className="absolute top-20 mt-2 md:mt-0 md:top-0 left-0 w-full h-full pointer-events-none">
                     <motion.div
                         initial={{ y: pos, x: "-50%" }}
                         animate={{ y: pos + `vh` }}
                         transition={{ ease: [0.76, 0, 0.24, 1], duration: 0.5 }}
-                        className="window rounded-3xl absolute w-[28vw] top-3  h-[38vh] bg-blue-300 left-[50%]  overflow-hidden">
+                        className="window rounded-3xl absolute w-[90vw] md:w-[28vw]  h-[25vh] md:h-[38vh]  top-3 bg-blue-300 left-[50%]  overflow-hidden">
 
                         {products.map((v, i) => (
                             <motion.div
                                 key={i}
                                 animate={{ y: -pos + `vh` }} transition={{ ease: [0.76, 0, 0.24, 1], duration: .5 }}
-                                className="w-[28vw] h-[40vh] bg-orange-400">
+                                className="w-[90vw] md:w-[28vw] h-[40vh] object-cover object-top bg-orange-400">
                                 <img className="w-full h-full object-cover object-top" src={v.img} alt="" />
                             </motion.div>
                         ))}
